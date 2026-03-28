@@ -1,7 +1,0 @@
-{
-  "name": "kirana-connect-root",
-  "private": true,
-  "scripts": {
-    "vercel-build": "cd kiranaconnect/frontend && npm install && npm run build"
-  }
-}
