@@ -1,6 +1,3 @@
 {
-  "installCommand": "cd kiranaconnect/frontend && npm install",
-  "buildCommand": "cd kiranaconnect/frontend && npm run build",
-  "outputDirectory": "kiranaconnect/frontend/dist",
-  "framework": "vite"
+  "outputDirectory": "kiranaconnect/frontend/dist"
 }
