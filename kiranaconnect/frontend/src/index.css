@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kirana-green: #1a5c3a;
+  --color-kirana-light: #2d8a5a;
+  --color-kirana-surface: #f8fdf9;
+  --color-kirana-accent: #f97316;
+  --font-display: "Fraunces", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-body);
+    background-color: var(--color-kirana-surface);
+    color: #1a2e20;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-lg border border-white/40 shadow-xl;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
